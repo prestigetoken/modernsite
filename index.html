@@ -1,0 +1,232 @@
+
+<p>                  </p>
+<!--- this code is to disallow people from inspecting the page. --->
+<body oncontextmenu="return false;">
+<head>
+    <script>
+
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+            return false;
+        }
+        if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+            return false;
+        }
+        if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+            return false;
+        }
+    }
+</script>
+    </head>
+
+    <!--- Seurity code ends here, fun code now begins. --->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>َLOGIN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+
+     <form class="box" method=get name="login">
+         <h2>Please Login To Use Site</h2><input type="text" name="userid" placeholder="Username"/>
+            <input type="password" name="pswrd" placeholder="Password"/>
+            <input type="submit" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+        </form>
+     
+  <!---  (old login style, dont delete.)
+      <form class="box" action="home.html" method=get>
+      <h1><font size="10">Login</font></h1>
+        <h2 style="color: red;">
+           <font size="5">*REQUIRED TO USE*</font>
+        </h2>
+        <input type="text" name="" placeholder="Username">
+        <input type="password" name="" placeholder="Password"> 
+        <input type="submit" onclick="check(this.form)" value="Login"/> 
+     </form> --->
+ 
+
+     <script language="javascript">
+            function check(form) { /*function to check userid & password*/ 
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "fish" && form.pswrd.value == "chips") {
+                   window.open("home.html");/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username");/*displays error message*/   
+                }       
+            }
+        
+         
+                    
+        </script>
+    <!---  --->
+     <style>
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+    
+    <body>
+
+
+<div id="myid"class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>⚠️WARNING⚠️</strong> Site is under development, we will be back shortly.   Will Be Back <i>XX-XX-XXXX </i> <b>unknown.</b>
+
+<!--- <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>⚠️WARNING⚠️</strong> Your password or username you entered is incorrect! 
+</div> --->
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
+<style>
+    body {
+        padding: 0;
+        font-family: sans-serif;
+        background-size: cover;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz3xD1rvnhG0lZMB65l8NJeERr5tDNu_5JFk4g_eo7YgVvWzk1")
+    }
+    
+    .box {
+        width: 300px;
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .box h1 {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    
+    .box input[type="text"],
+    .box input[type="password"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #3498db;
+        padding: 14px 10px;
+        width: 200px;
+        outline: none;
+        color: grey;
+        border-radius: 24px;
+        transition: 0.25s;
+    }
+    
+    .box input[type="text"]:focus,
+    .box input[type="password"]:focus {
+        width: 280px;
+        border-color: #2ecc71;
+    }
+    
+    .box input[type="submit"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #2ecc71;
+        padding: 14px 40px;
+        outline: none;
+        color: grey;
+        border-radius: 24px;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+    
+    .box input[type="submit"]:hover {
+        background: #2ecc71;
+    }
+    
+    .box input[type="reset"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #2ecc71;
+        padding: 14px 40px;
+        outline: none;
+        color: grey;
+        border-radius: 24px;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+        .box input[type="reset"]:hover {
+        background: #2ecc71;
+    }
+    
+    body {
+        padding: 0;
+        font-family: "montserrat";
+        background-image: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
+        background-size: 400% 400%;
+        animation: bganimation 15s infinite;
+    }
+    
+    .text {
+        color: grey;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 350px 0;
+        font-size: 22px;
+    }
+    
+    @keyframes bganimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+</style>
